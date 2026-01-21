@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section>
+
+        <header>
+
+            <div class="header_content">
+
+                <img src="images/DCC72115-C58B-41ED-95D1-14555B8965A5.jpg" alt="">
+
+                <p class="location">Current Location <small><i class='bxr  bx-location'></i> Badlapur</small></p>
+
+                <p class="bell"><i class='bxr  bx-bell'></i> <span></span></p>
+
+            </div>
+
+
+            <div class="search">
+
+                <div class="search_filter_box">
+                    <div class="search_box">
+                        <input type="text" placeholder="Search here">
+                        <p><i class='bxr  bx-search-big'></i></p>
+                    </div>
+
+                    <p class="filter"><i class='bxr  bx-filter'></i> </p>
+
+                </div>
+
+                <div class="navbar">
+
+                    <ul>
+                        <li class="active">
+                            All
+                        </li>
+                        <li>
+                            Flat
+                        </li>
+                        <li>
+                            Villa
+                        </li>
+                        <li>
+                            House
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+
+            <h4>Recommended for you</h4>
+
+            <div class="card">
+                <img src="images/todd-kent-178j8tJrNlc-unsplash.jpg" alt="">
+
+                <small class="sale">Sale</small>
+                <p class="heart"><i class='bxr  bx-heart'></i> </p>
+
+            </div>
+
+            <div class="details">
+
+                <div class="details1">
+                    <li><span><i class='bxr  bx-location'></i></span>Rattan house sector 1</li>
+                    <li><span><i class='bxr  bx-star star'></i> </span> 7/10</li>
+                </div>
+
+                <div class="details2">
+                    <div class="details_mini">
+                        <small><span><i class='bxr  bx-bed-alt'></i> 3</span>Bed</small>
+                        <small><span><i class='bxr  bx-bath'></i> 2</span>Bath</small>
+                        <small><span><i class='bxr  bx-car'></i> 3 </span>Parking</small>
+                    </div>
+                    <small class="price"><i class='bxr  bx-rupee ruppes'></i> 50000000</small>
+                </div>
+
+                <div class="details3">
+                    <li>View Now</li>
+                    <p class="share"><i class='bxr  bx-arrow-out-right-square-half'></i> </p>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <img src="images/frames-for-your-heart-mR1CIDduGLc-unsplash.jpg" alt="">
+
+                <small class="sale">Rent</small>
+                <p class="heart"><i class='bxr  bx-heart'></i> </p>
+
+            </div>
+
+            <div class="details">
+
+                <div class="details1">
+                    <li><span><i class='bxr  bx-location'></i></span>Villa sector 1</li>
+                    <li><span><i class='bxr  bx-star star'></i> </span> 7/10</li>
+                </div>
+
+                <div class="details2">
+                    <div class="details_mini">
+                        <small><span><i class='bxr  bx-bed-alt'></i> 3</span>Bed</small>
+                        <small><span><i class='bxr  bx-bath'></i> 2</span>Bath</small>
+                        <small><span><i class='bxr  bx-car'></i> 3 </span>Parking</small>
+                    </div>
+                    <small class="price"><i class='bxr  bx-rupee ruppes'></i> 50000000</small>
+                </div>
+
+                <div class="details3">
+                    <li>View Now</li>
+                    <p class="share"><i class='bxr  bx-arrow-out-right-square-half'></i> </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Navigation -->
+            <div class="bottom-nav" id="bottomNav">
+                <button><i class='bxr  bx-home-alt-2 active2'></i> </button>
+                <button><i class='bxr  bx-heart'></i></button>
+                <button><i class='bxr  bx-user'></i> </button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $("ul > li").click(function () {
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // //  scroll hide bottom nav  //
+
+
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const bottomNav = document.getElementById("bottomNav");
+
+        window.addEventListener("scroll", () => {
+            bottomNav.classList.add("hide");
+
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                bottomNav.classList.remove("hide");
+            }, 400);
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
