@@ -5,8 +5,8 @@
        padding: 0;
        box-sizing: border-box;
        font-family: "Poppins", sans-serif;
-       list-style: none;
-       text-decoration: none;
+       list-style: none !important;
+       text-decoration: none !important;
    }
 
 
@@ -282,6 +282,16 @@
 
    .details3 a {
        width: 75%;
+       background: var(--viewbtn);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 5px;
+       padding: .2rem;
+   }
+
+   .view_bttn{
+     width: 75%;
        background: var(--viewbtn);
        display: flex;
        justify-content: center;
