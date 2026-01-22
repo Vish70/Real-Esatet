@@ -19,8 +19,8 @@
        --textblack: #000;
        --green: #54D49A;
        --white: #fff;
-       --star:#EFA421;
-       --viewbtn:#CAD7DB;
+       --star: #EFA421;
+       --viewbtn: #CAD7DB;
    }
 
 
@@ -200,7 +200,7 @@
 
    .card {
        position: relative;
-       margin:1rem 0;
+       margin: 1rem 0 .2rem 0;
    }
 
    .card img {
@@ -236,106 +236,125 @@
        font-size: 1.5rem;
    }
 
-   .details1,.details2,.details3{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: .5rem 0;
+   .details1,
+   .details2,
+   .details3 {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: .5rem 0;
    }
- 
-   .details1 i,.details2 i,.details3 i{
-    color:var(--lightblue);
+
+   .details1 i,
+   .details2 i,
+   .details3 i {
+       color: var(--lightblue);
    }
 
 
-   .details_mini{
-     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    grid-gap: .8rem;
-   }
-   .details_mini small{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: .7rem;
-   }
-   .ruppes{
-    color: var(--textblack);
-   }
-   .star{
-    color: var(--star) !important;
+   .details_mini {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       grid-gap: .8rem;
    }
 
-   .details3 li{
-   width: 75%;
-    background:var(--viewbtn);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: .2rem;
+   .details_mini span {
+       color: #000;
    }
 
-   .price{
-    font-size: .7rem;
+   .details_mini small {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       font-size: .6rem;
+       color: var(--textgrey);
    }
 
-   .share{
-    font-size:1.3rem;
+   .ruppes {
+       color: var(--textblack);
    }
+
+   .star {
+       color: var(--star) !important;
+   }
+
+   .details3 a {
+       width: 75%;
+       background: var(--viewbtn);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 5px;
+       padding: .2rem;
+   }
+
+   .price {
+       font-size: .7rem;
+   }
+
+   .share {
+       font-size: 1.3rem;
+   }
+
+
+   .view_btn {
+       color: #000;
+   }
+
 
    /* ///// bottom navbar  ////// */
 
    .bottom-nav {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 400px;
-  height: 60px;
-  border-radius: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+       position: fixed;
+       bottom: 20px;
+       left: 50%;
+       transform: translateX(-50%);
+       width: 90%;
+       max-width: 400px;
+       height: 60px;
+       border-radius: 40px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       transition: transform 0.3s ease, opacity 0.3s ease;
+       z-index: 999;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
 
-.bottom-nav.hide {
-  transform: translate(-50%, 100px);
-  opacity: 0;
-}
+   .bottom-nav.hide {
+       transform: translate(-50%, 100px);
+       opacity: 0;
+   }
 
 
-.bottom-nav button i:hover {
-  color:var(--lightblue);
-}
+   .bottom-nav button i:hover {
+       color: var(--lightblue);
+   }
 
-.active2{
-  color:var(--lightblue);
+   .active2 {
+       color: var(--lightblue);
 
-}
+   }
 
-button{
-    width:50px;
-    height:50px;
-    background-color:var(--white);
-    border-radius:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding:.6rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+   button {
+       width: 50px;
+       height: 50px;
+       background-color: var(--white);
+       border-radius: 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: none;
+       padding: .6rem;
+       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
-}
-button i{
-    font-size:1.5rem;
-    color: #EAEAEA;
-}
+   }
+
+   button i {
+       font-size: 1.5rem;
+       color: #EAEAEA;
+   }

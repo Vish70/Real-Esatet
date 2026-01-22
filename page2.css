@@ -1,0 +1,242 @@
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+       list-style: none;
+       text-decoration: none;
+   }
+
+   :root {
+       --mainbackground: #E6F6FF;
+       --lightblue: #71C5DF;
+       --location: #5F5F5F;
+       --currentlocation: #000;
+       --textgrey: #a6a6a6;
+       --textblack: #000;
+       --green: #54D49A;
+       --white: #fff;
+       --star: #EFA421;
+       --viewbtn: #CAD7DB;
+   }
+
+
+
+   body {
+       background-color: var(--mainbackground);
+   }
+
+
+   section {
+       margin: 1rem;
+   }
+
+   section h4 a{
+       color: var(--lightblue);
+       font-weight: 400;
+   }
+
+   section span {
+       color: #000;
+   }
+
+   .card {
+       position: relative;
+       margin: 1rem 0 .2rem 0;
+   }
+
+   .card .main_img {
+       width: 100%;
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+   }
+
+   .sale {
+       position: absolute;
+       top: 20px;
+       left: 0px;
+       padding-left: .7rem;
+       padding-right: .4rem;
+       background-color: var(--green);
+   }
+
+   .heart {
+       position: absolute;
+       top: 0px;
+       right: -1px;
+       width: 40px;
+       height: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 50px;
+       background-color: var(--mainbackground);
+   }
+
+   .heart i {
+       color: var(--lightblue);
+       font-size: 1.5rem;
+   }
+
+   .details1,
+   .details2 {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: .5rem 0;
+   }
+
+   .details1 i,
+   .details2 i {
+       color: var(--lightblue);
+   }
+
+
+   .details_mini {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       grid-gap: .8rem;
+   }
+
+   .details_mini small {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       font-size: .6rem;
+       color: var(--textgrey);
+   }
+
+   .ruppes {
+       color: var(--textblack);
+   }
+
+   .star {
+       color: var(--star) !important;
+   }
+
+   .details3 {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       padding: .4rem 0;
+   }
+
+   .details3 .name_ {
+       font-size: .8rem;
+   }
+
+   .details3 .para {
+       padding: .4rem 0;
+       color: var(--textgrey);
+       font-size: .7rem;
+   }
+
+   .price {
+       font-size: .7rem;
+   }
+
+   .smallimg img {
+       width: 32.5%;
+       height: 70px;
+   }
+
+   .smallimg {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .details4 {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: .4rem 0;
+   }
+
+   .details4 small p {
+       color: #000;
+   }
+
+   .details4 small {
+       font-size: .6rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       color: var(--textgrey);
+   }
+
+   .details5 {
+       padding: .4rem 0;
+   }
+
+   .details5 .name_ {
+       font-size: .8rem;
+   }
+
+   .feature {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+       grid-gap: .2rem;
+   }
+
+    .feature li{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .feature small span i {
+       color: var(--green);
+        background-color: transparent !important;
+   }
+
+   .feature small span {
+       background-color: transparent !important;
+   }
+
+   .feature small{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.5rem 0;
+   }
+
+   .feature li {
+    padding:.0rem .5rem;
+    color: #FFF;
+       background-color: var(--green);
+   }
+
+     .details6 {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       padding: .4rem 0;
+   }
+    .details6 .name_ {
+       font-size: .8rem;
+   }
+
+  .map{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  margin:.5rem 0;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
